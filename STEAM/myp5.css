@@ -1,0 +1,71 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  
+  
+  .navbar {
+    background-color: #0b257a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  
+  .logo img {
+    height: 50px; /* Adjust the height of the logo as needed */
+    
+  }
+  
+  /* Styles for side menu */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #0b257a;
+    color: white;
+    transition: left 0.3s ease;
+  }
+  
+  .side-menu nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side-menu nav ul li a:hover {
+    color: rgb(28, 243, 28); /* Change to desired hover color */
+  }
+  
+  
+  .side-menu nav ul li {
+    padding: 10px;
+  }
+  
+  .side-menu nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Styles for menu icon */
+  .menu-icon {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(28, 243, 28);
+    margin: 5px 0;
+  }
+  
+  h1{
+    text-align: center;
+  }

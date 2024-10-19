@@ -1,0 +1,360 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    
+}
+.navbar {
+    /*background-color: rgb(9, 163, 9);*/
+    background-color: #0b257a ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    
+  }
+  
+  .learn {
+    position: relative;
+  }
+  
+  .text {
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    transform: translate(-50%, -100%) scale(1); /* Initial state */
+    font-size: 35px;
+    font-family: 'Your Handwriting Font', cursive; 
+    color: rgb(247, 199, 9);
+    animation: pulseText 2.5s linear infinite alternate; /* Alternating animation */
+  }
+  
+ /* @keyframes pulseText {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    100% { transform: translate(-50%, -50%) scale(1.8); } /* Scale up */
+  
+  */
+
+  .logo img{
+  height: 10px;
+  width: 90px;
+  }
+
+  .navbar-links {
+    margin-right: 20px; /* Adjust the spacing between the link and the right edge of the page */
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 13px;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+    color: rgb(28, 243, 28);
+  }
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-rows: auto auto; */
+  grid-gap: 10px; 
+  grid-row-gap: 0.05px;
+
+  
+}
+
+  .robotics {
+    width: 360px; 
+    height: 430px; 
+    
+  }
+  
+  .coding {
+    width: 340px; 
+    height: 450px; 
+  }
+
+  .programming{
+    width: 340px; 
+    height: 450px; 
+  }
+  
+  .openhardware {
+    width: 320px; 
+    height: 390px; 
+  }
+
+  .web_app{
+    width: 340px; 
+    height: 450px; 
+  }
+  
+  .cad{  
+    width: 340px; 
+    height: 10px; 
+  }
+
+  .cam{
+    width: 340px; 
+    height: 450px; 
+  }
+
+  .add{
+    width: 320px; 
+    height: 390px; 
+  }
+
+  .wood{  
+    width: 360px; 
+    height: 400px; 
+  }
+  
+  .design{
+    width: 360px; 
+    height: 400px; 
+  }
+
+  
+  .box {
+    border: 3px solid #0b257a;
+    padding: 20px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    color: black;
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .box h2 {
+    margin-top: 0;
+  }
+  
+  .box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*This shanges the colours and property of the whole what we offer page*/
+  .offer {
+    background-color: white;
+    
+  }
+
+
+a {
+    text-decoration: none; /* Remove underline from all links */
+    color: white;
+  }
+
+.container {
+    padding: 0 16px;
+}
+
+/* Icon styling */
+.fa {
+    margin: 10px;
+    font-size: 68px;
+}
+
+
+.fa:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Button designing */
+.button {
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: #449D44;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Hover effect on button */
+.button:hover {
+    background-color: green;
+}
+
+/* Margin first member of team */
+#gfg {
+    float: none;
+    margin: auto;
+}
+  
+.content {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .words{
+    color: white;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 90px; /* Increased gap between elements */
+    padding: 30px;
+    background-color: #0b257a ;
+}
+.gallery_text {
+  background-color: #0b257a ;
+  padding: 5px;
+  color: white;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-end; /* Text starts at the bottom */
+    align-items: flex-end;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform: translateY(100%); /* Start below the container */
+    transition: transform 0.5s ease-in-out; /* Smooth upward transition */
+}
+
+.image-container:hover .text {
+    transform: translateY(0); /* Text moves up into view */
+}
+
+
+.icon-btn {
+    padding: 1px 10px;
+    background-color: rgb(9, 163, 9);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery_button{
+ color: black;
+}
+
+.icon-btn:hover {
+  background-color: white;
+  color: black;
+}
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Keep it on top of other elements */
+}
+
+#chatbot-icon {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#chatbot-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+#chatbox {
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* Position the chatbox above the icon */
+  bottom: 70px; /* Adjust to create space above the icon */
+  right: 0;
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #5af72f;
+  border-radius: 8px;
+  background-color: white; /* Optional: Background color for the chatbox */
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 200px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#user-input {
+  width: calc(100% - 60px);
+  padding: 5px;
+}
+
+#send-btn {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+
+  footer {
+    background-color: rgb(9, 163, 9);
+    color: black;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0px;
+  }

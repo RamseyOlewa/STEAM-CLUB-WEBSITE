@@ -1,0 +1,164 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+
+.navbar {
+  background-color: #0b257a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.logo img {
+  height: 50px; /* Adjust the height of the logo as needed */
+  
+}
+
+/* Styles for side menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #0b257a;
+  color: white;
+  transition: left 0.3s ease;
+}
+
+.side-menu nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu nav ul li a:hover {
+  color: rgb(28, 243, 28); /* Change to desired hover color */
+}
+
+
+.side-menu nav ul li {
+  padding: 10px;
+}
+
+.side-menu nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styles for menu icon */
+.menu-icon {
+  cursor: pointer;
+  padding: 10px;
+  
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(28, 243, 28);
+  margin: 5px 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.container img {
+  float: right; /* Float the image to the left */
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both; /* Clear float */
+}
+
+h1{
+  text-align: center;
+  font-family: "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.simple-table {
+  border-collapse: collapse; /* Collapse table borders */
+  width: 99%;  /*Full width */
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.simple-table td {
+  border: 1px solid #000; /* Add borders to table cells */
+  padding: 8px; /* Add padding inside table cells */
+  text-align: center; /* Center-align text */
+}
+
+/* Styles for the button container */
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Align buttons evenly */
+  margin-top: 50px; /* Add some margin from the top */
+}
+
+/* Styles for the buttons */
+.button {
+  position: relative; /* Set position to relative */
+  display: inline-block;
+  text-decoration: none;
+  color: #0b257a;
+  padding: 10px 20px;
+  border: 2px solid #0b257a;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0b257a;
+  color: rgb(28, 243, 28);
+}
+
+/* Styles for the arrows */
+.arrow {
+  position: absolute; /* Set position to absolute */
+  top: -70px; /* Adjust vertical position as needed */
+  left: 40%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 24px;
+  animation: arrowBounce 0.5s infinite alternate; /* Arrow animation */
+  color: #0b257a;
+  font-size: 45px; 
+}
+
+@keyframes arrowBounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+.structure{
+  background-color: rgb(9, 163, 9);
+  color:#0b257a ;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-top: 2px;
+}
+
+footer {
+  background-color: #0b257a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
